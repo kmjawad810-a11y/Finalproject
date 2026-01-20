@@ -40,7 +40,7 @@ namespace WindowsFormsApp1
             ad.Show();
         }
 
-        private void button5_Click_1(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
