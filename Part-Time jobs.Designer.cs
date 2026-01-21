@@ -31,6 +31,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.CompanyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Corporate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Freelancer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startup = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,6 +44,11 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Honeydew;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CompanyName,
+            this.Corporate,
+            this.Freelancer,
+            this.startup});
             this.dataGridView1.Location = new System.Drawing.Point(17, 78);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -71,6 +80,34 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "PART TIME JOBS";
             // 
+            // CompanyName
+            // 
+            this.CompanyName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CompanyName.HeaderText = "Company Name";
+            this.CompanyName.Name = "CompanyName";
+            this.CompanyName.ReadOnly = true;
+            // 
+            // Corporate
+            // 
+            this.Corporate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Corporate.HeaderText = "Corporate";
+            this.Corporate.Name = "Corporate";
+            this.Corporate.ReadOnly = true;
+            // 
+            // Freelancer
+            // 
+            this.Freelancer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Freelancer.HeaderText = "Freelancer";
+            this.Freelancer.Name = "Freelancer";
+            this.Freelancer.ReadOnly = true;
+            // 
+            // startup
+            // 
+            this.startup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.startup.HeaderText = "Startup";
+            this.startup.Name = "startup";
+            this.startup.ReadOnly = true;
+            // 
             // Part_Time_jobs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,5 +131,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CompanyName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Corporate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Freelancer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startup;
     }
 }

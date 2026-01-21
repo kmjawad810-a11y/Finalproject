@@ -69,6 +69,7 @@
             this.btnPart.TabIndex = 3;
             this.btnPart.Text = "Part-Time Jobs";
             this.btnPart.UseVisualStyleBackColor = false;
+            this.btnPart.Click += new System.EventHandler(this.btnPart_Click);
             // 
             // btnDeals
             // 
@@ -81,6 +82,7 @@
             this.btnDeals.TabIndex = 4;
             this.btnDeals.Text = "Deals n Discounts";
             this.btnDeals.UseVisualStyleBackColor = false;
+            this.btnDeals.Click += new System.EventHandler(this.btnDeals_Click);
             // 
             // label3
             // 
@@ -113,6 +115,7 @@
             this.btnScholarship.TabIndex = 0;
             this.btnScholarship.Text = "Scholarships";
             this.btnScholarship.UseVisualStyleBackColor = false;
+            this.btnScholarship.Click += new System.EventHandler(this.btnScholarship_Click);
             // 
             // label2
             // 
@@ -150,6 +153,7 @@
             this.btnUnifees.TabIndex = 2;
             this.btnUnifees.Text = "University Fees";
             this.btnUnifees.UseVisualStyleBackColor = false;
+            this.btnUnifees.Click += new System.EventHandler(this.btnUnifees_Click);
             // 
             // label1
             // 
