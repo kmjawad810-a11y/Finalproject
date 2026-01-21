@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnPart = new System.Windows.Forms.Button();
+            this.btnDeals = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnScholarship = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnlogout = new System.Windows.Forms.Button();
+            this.btnUnifees = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -46,45 +45,44 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Honeydew;
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btnPart);
+            this.panel2.Controls.Add(this.btnDeals);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnScholarship);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btnlogout);
+            this.panel2.Controls.Add(this.btnUnifees);
             this.panel2.Location = new System.Drawing.Point(104, 200);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(308, 468);
             this.panel2.TabIndex = 1;
             // 
-            // button4
+            // btnPart
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 250);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(308, 47);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Part-Time Jobs";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnPart.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnPart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnPart.ForeColor = System.Drawing.Color.White;
+            this.btnPart.Location = new System.Drawing.Point(0, 250);
+            this.btnPart.Name = "btnPart";
+            this.btnPart.Size = new System.Drawing.Size(308, 47);
+            this.btnPart.TabIndex = 3;
+            this.btnPart.Text = "Part-Time Jobs";
+            this.btnPart.UseVisualStyleBackColor = false;
+            this.btnPart.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnDeals
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 327);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(308, 49);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Deals n Discounts";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnDeals.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnDeals.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDeals.ForeColor = System.Drawing.Color.White;
+            this.btnDeals.Location = new System.Drawing.Point(0, 327);
+            this.btnDeals.Name = "btnDeals";
+            this.btnDeals.Size = new System.Drawing.Size(308, 49);
+            this.btnDeals.TabIndex = 4;
+            this.btnDeals.Text = "Deals n Discounts";
+            this.btnDeals.UseVisualStyleBackColor = false;
+            this.btnDeals.Click += new System.EventHandler(this.button5_Click);
             // 
             // label3
             // 
@@ -106,31 +104,18 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Lifestyle and Savings";
             // 
-            // button1
+            // btnScholarship
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(308, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Scholarships";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 110);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(308, 49);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Find Loans";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnScholarship.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnScholarship.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnScholarship.ForeColor = System.Drawing.Color.White;
+            this.btnScholarship.Location = new System.Drawing.Point(0, 165);
+            this.btnScholarship.Name = "btnScholarship";
+            this.btnScholarship.Size = new System.Drawing.Size(308, 50);
+            this.btnScholarship.TabIndex = 0;
+            this.btnScholarship.Text = "Scholarships";
+            this.btnScholarship.UseVisualStyleBackColor = false;
+            this.btnScholarship.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -143,32 +128,32 @@
             this.label2.Text = "Academic and Financial";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button6
+            // btnlogout
             // 
-            this.button6.BackColor = System.Drawing.Color.Maroon;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(107, 425);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(82, 31);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "LOG OUT";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnlogout.BackColor = System.Drawing.Color.Maroon;
+            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogout.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogout.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnlogout.Location = new System.Drawing.Point(107, 425);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(82, 31);
+            this.btnlogout.TabIndex = 5;
+            this.btnlogout.Text = "LOG OUT";
+            this.btnlogout.UseVisualStyleBackColor = false;
+            this.btnlogout.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button3
+            // btnUnifees
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 56);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(308, 48);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "University Fees";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnUnifees.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnUnifees.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUnifees.ForeColor = System.Drawing.Color.White;
+            this.btnUnifees.Location = new System.Drawing.Point(0, 56);
+            this.btnUnifees.Name = "btnUnifees";
+            this.btnUnifees.Size = new System.Drawing.Size(308, 48);
+            this.btnUnifees.TabIndex = 2;
+            this.btnUnifees.Text = "University Fees";
+            this.btnUnifees.UseVisualStyleBackColor = false;
+            this.btnUnifees.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -214,16 +199,15 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnlogout;
+        private System.Windows.Forms.Button btnDeals;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnPart;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnScholarship;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnUnifees;
     }
 }

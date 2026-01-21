@@ -28,105 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.EditSch = new System.Windows.Forms.Button();
+            this.editUniFee = new System.Windows.Forms.Button();
+            this.editdeals = new System.Windows.Forms.Button();
+            this.btnlogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // EditSch
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(57, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(286, 46);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Edit Scholarships";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.EditSch.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.EditSch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditSch.ForeColor = System.Drawing.Color.White;
+            this.EditSch.Location = new System.Drawing.Point(57, 37);
+            this.EditSch.Name = "EditSch";
+            this.EditSch.Size = new System.Drawing.Size(286, 46);
+            this.EditSch.TabIndex = 4;
+            this.EditSch.Text = "Edit Scholarships";
+            this.EditSch.UseVisualStyleBackColor = false;
+            this.EditSch.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // editUniFee
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(57, 245);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(286, 46);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Edit Loans";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.editUniFee.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.editUniFee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.editUniFee.ForeColor = System.Drawing.Color.White;
+            this.editUniFee.Location = new System.Drawing.Point(57, 193);
+            this.editUniFee.Name = "editUniFee";
+            this.editUniFee.Size = new System.Drawing.Size(286, 46);
+            this.editUniFee.TabIndex = 6;
+            this.editUniFee.Text = "Edit University Fees";
+            this.editUniFee.UseVisualStyleBackColor = false;
+            this.editUniFee.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button3
+            // editdeals
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(57, 193);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(286, 46);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Edit University Fees";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.editdeals.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.editdeals.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.editdeals.ForeColor = System.Drawing.Color.White;
+            this.editdeals.Location = new System.Drawing.Point(57, 89);
+            this.editdeals.Name = "editdeals";
+            this.editdeals.Size = new System.Drawing.Size(286, 46);
+            this.editdeals.TabIndex = 7;
+            this.editdeals.Text = "Edit Deals n Discounts";
+            this.editdeals.UseVisualStyleBackColor = false;
+            this.editdeals.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button4
+            // btnlogout
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(57, 89);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(286, 46);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Edit Deals n Discounts";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(57, 141);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(286, 46);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Edit Part-Time Jobs";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Brown;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(143, 311);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(101, 35);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "Log Out";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnlogout.BackColor = System.Drawing.Color.Brown;
+            this.btnlogout.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogout.ForeColor = System.Drawing.Color.White;
+            this.btnlogout.Location = new System.Drawing.Point(143, 311);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(101, 35);
+            this.btnlogout.TabIndex = 9;
+            this.btnlogout.Text = "Log Out";
+            this.btnlogout.UseVisualStyleBackColor = false;
+            this.btnlogout.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Ivory;
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btnlogout);
+            this.panel1.Controls.Add(this.EditSch);
+            this.panel1.Controls.Add(this.editUniFee);
+            this.panel1.Controls.Add(this.editdeals);
             this.panel1.Location = new System.Drawing.Point(12, 127);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(402, 360);
@@ -175,12 +145,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button EditSch;
+        private System.Windows.Forms.Button editUniFee;
+        private System.Windows.Forms.Button editdeals;
+        private System.Windows.Forms.Button btnlogout;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;

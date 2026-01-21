@@ -29,30 +29,28 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Deal_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Electronics = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Books = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Foods = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtDealName = new System.Windows.Forms.TextBox();
+            this.txtfoods = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtElectro = new System.Windows.Forms.TextBox();
+            this.txtbook = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.Deal_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Electronics = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Books = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Foods = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -72,96 +70,96 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // textBox1
+            // Deal_Name
             // 
-            this.textBox1.Location = new System.Drawing.Point(709, 25);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 24);
-            this.textBox1.TabIndex = 0;
+            this.Deal_Name.HeaderText = "Deal Name";
+            this.Deal_Name.Name = "Deal_Name";
             // 
-            // button2
+            // Electronics
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(806, 75);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Electronics.HeaderText = "Electronics";
+            this.Electronics.Name = "Electronics";
             // 
-            // button1
+            // Books
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(709, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Books.HeaderText = "Books";
+            this.Books.Name = "Books";
+            // 
+            // Foods
+            // 
+            this.Foods.HeaderText = "Foods";
+            this.Foods.Name = "Foods";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(709, 25);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(311, 24);
+            this.txtSearch.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.Location = new System.Drawing.Point(806, 75);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(709, 75);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBox6);
+            this.panel3.Controls.Add(this.btnDelete);
+            this.panel3.Controls.Add(this.btnAdd);
+            this.panel3.Controls.Add(this.txtSearch);
+            this.panel3.Controls.Add(this.btnSearch);
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.btnSave);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.txtDealName);
+            this.panel3.Controls.Add(this.txtfoods);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txtElectro);
+            this.panel3.Controls.Add(this.txtbook);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(204, 80);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1044, 608);
             this.panel3.TabIndex = 7;
             // 
-            // button5
+            // btnDelete
             // 
-            this.button5.BackColor = System.Drawing.Color.IndianRed;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(509, 561);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 30);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "Delete";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(639, 549);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 30);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // btnSave
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(506, 501);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 19);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Location:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(591, 503);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(602, 561);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 31);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(764, 548);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 31);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -169,35 +167,35 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(29, 495);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 19);
+            this.label2.Size = new System.Drawing.Size(102, 19);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Shop Name:";
+            this.label2.Text = "Deal Name:";
             // 
-            // textBox2
+            // txtDealName
             // 
-            this.textBox2.Location = new System.Drawing.Point(140, 497);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtDealName.Location = new System.Drawing.Point(140, 497);
+            this.txtDealName.Multiline = true;
+            this.txtDealName.Name = "txtDealName";
+            this.txtDealName.Size = new System.Drawing.Size(100, 20);
+            this.txtDealName.TabIndex = 1;
             // 
-            // textBox5
+            // txtfoods
             // 
-            this.textBox5.Location = new System.Drawing.Point(387, 541);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.txtfoods.Location = new System.Drawing.Point(451, 538);
+            this.txtfoods.Multiline = true;
+            this.txtfoods.Name = "txtfoods";
+            this.txtfoods.Size = new System.Drawing.Size(100, 20);
+            this.txtfoods.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(273, 501);
+            this.label5.Location = new System.Drawing.Point(340, 498);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 19);
+            this.label5.Size = new System.Drawing.Size(94, 19);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Promo code:";
+            this.label5.Text = "Electronics:";
             // 
             // label3
             // 
@@ -205,36 +203,36 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(29, 536);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 19);
+            this.label3.Size = new System.Drawing.Size(57, 19);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Product:";
+            this.label3.Text = "Books:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox4
+            // txtElectro
             // 
-            this.textBox4.Location = new System.Drawing.Point(387, 500);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.txtElectro.Location = new System.Drawing.Point(451, 500);
+            this.txtElectro.Multiline = true;
+            this.txtElectro.Name = "txtElectro";
+            this.txtElectro.Size = new System.Drawing.Size(100, 20);
+            this.txtElectro.TabIndex = 3;
             // 
-            // textBox3
+            // txtbook
             // 
-            this.textBox3.Location = new System.Drawing.Point(140, 538);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtbook.Location = new System.Drawing.Point(140, 538);
+            this.txtbook.Multiline = true;
+            this.txtbook.Name = "txtbook";
+            this.txtbook.Size = new System.Drawing.Size(100, 20);
+            this.txtbook.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(273, 542);
+            this.label4.Location = new System.Drawing.Point(340, 536);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 19);
+            this.label4.Size = new System.Drawing.Size(58, 19);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Discount :";
+            this.label4.Text = "Foods:";
             // 
             // button3
             // 
@@ -283,32 +281,12 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "panel";
             // 
-            // Deal_Name
-            // 
-            this.Deal_Name.HeaderText = "Deal Name";
-            this.Deal_Name.Name = "Deal_Name";
-            // 
-            // Electronics
-            // 
-            this.Electronics.HeaderText = "Electronics";
-            this.Electronics.Name = "Electronics";
-            // 
-            // Books
-            // 
-            this.Books.HeaderText = "Books";
-            this.Books.Name = "Books";
-            // 
-            // Foods
-            // 
-            this.Foods.HeaderText = "Foods";
-            this.Foods.Name = "Foods";
-            // 
             // Edit_Deals_n_Discounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(1287, 716);
+            this.ClientSize = new System.Drawing.Size(1287, 706);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
@@ -328,22 +306,20 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtfoods;
+        private System.Windows.Forms.TextBox txtElectro;
+        private System.Windows.Forms.TextBox txtbook;
+        private System.Windows.Forms.TextBox txtDealName;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;

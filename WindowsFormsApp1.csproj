@@ -68,18 +68,6 @@
     <Compile Include="Edit Deals n Discounts.Designer.cs">
       <DependentUpon>Edit Deals n Discounts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Edit Loans.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Edit Loans.Designer.cs">
-      <DependentUpon>Edit Loans.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Edit Part-Time Job.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Edit Part-Time Job.Designer.cs">
-      <DependentUpon>Edit Part-Time Job.cs</DependentUpon>
-    </Compile>
     <Compile Include="Edit Sch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,12 +81,6 @@
       <DependentUpon>Edit Uni Fees.cs</DependentUpon>
     </Compile>
     <Compile Include="FormClear.cs" />
-    <Compile Include="Loans.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Loans.Designer.cs">
-      <DependentUpon>Loans.cs</DependentUpon>
-    </Compile>
     <Compile Include="Part-Time jobs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,20 +134,11 @@
     <EmbeddedResource Include="Edit Deals n Discounts.resx">
       <DependentUpon>Edit Deals n Discounts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Edit Loans.resx">
-      <DependentUpon>Edit Loans.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Edit Part-Time Job.resx">
-      <DependentUpon>Edit Part-Time Job.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Edit Sch.resx">
       <DependentUpon>Edit Sch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Edit Uni Fees.resx">
       <DependentUpon>Edit Uni Fees.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Loans.resx">
-      <DependentUpon>Loans.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Part-Time jobs.resx">
       <DependentUpon>Part-Time jobs.cs</DependentUpon>
