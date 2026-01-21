@@ -57,5 +57,12 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            admin_status ads = new admin_status();
+            ads.Show();
+        }
     }
 }

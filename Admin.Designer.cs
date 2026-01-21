@@ -35,6 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@
             this.editUniFee.BackColor = System.Drawing.SystemColors.HotTrack;
             this.editUniFee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.editUniFee.ForeColor = System.Drawing.Color.White;
-            this.editUniFee.Location = new System.Drawing.Point(57, 193);
+            this.editUniFee.Location = new System.Drawing.Point(57, 172);
             this.editUniFee.Name = "editUniFee";
             this.editUniFee.Size = new System.Drawing.Size(286, 46);
             this.editUniFee.TabIndex = 6;
@@ -69,7 +70,7 @@
             this.editdeals.BackColor = System.Drawing.SystemColors.HotTrack;
             this.editdeals.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.editdeals.ForeColor = System.Drawing.Color.White;
-            this.editdeals.Location = new System.Drawing.Point(57, 116);
+            this.editdeals.Location = new System.Drawing.Point(57, 106);
             this.editdeals.Name = "editdeals";
             this.editdeals.Size = new System.Drawing.Size(286, 46);
             this.editdeals.TabIndex = 7;
@@ -93,6 +94,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Ivory;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnlogout);
             this.panel1.Controls.Add(this.EditSch);
             this.panel1.Controls.Add(this.editUniFee);
@@ -125,6 +127,19 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Dashboard";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(57, 245);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(286, 46);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Status";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,5 +167,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }
