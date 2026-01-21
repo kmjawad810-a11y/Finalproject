@@ -13,7 +13,6 @@ namespace WindowsFormsApp1
     public partial class University_fee : Form
     {
         private DataAccess Da { get; set; }
-        
         public University_fee()
         {
             InitializeComponent();

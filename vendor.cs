@@ -53,7 +53,6 @@ namespace WindowsFormsApp1
                     MessageBox.Show("Please fill all the empty fields");
                     return;
                 }
-
                 var sql = "insert into JobGiver2 (CompanyName, Corporate, Freelancer, Startup) " +
                           "values ('" + this.txtCompanyName.Text + "', '" + this.txtCorpo.Text +
                           "', '" + this.txtFreelancer.Text + "', '" + this.txtStartup.Text + "');";
@@ -112,6 +111,11 @@ namespace WindowsFormsApp1
         {
             Login loginForm = new Login();
             loginForm.Show();
+        }
+
+        private void vendor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

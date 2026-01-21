@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.dgvScholarship = new System.Windows.Forms.DataGridView();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.UniversityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ScholarshipName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eligibility = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScholarship)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,31 +56,6 @@
             this.dgvScholarship.ReadOnly = true;
             this.dgvScholarship.Size = new System.Drawing.Size(828, 338);
             this.dgvScholarship.TabIndex = 4;
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.Maroon;
-            this.btnBack.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(764, 446);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(76, 40);
-            this.btnBack.TabIndex = 5;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(278, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(272, 34);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "SCHOLARSHIPS";
             // 
             // UniversityName
             // 
@@ -122,6 +97,31 @@
             this.Amount.Name = "Amount";
             this.Amount.ReadOnly = true;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Maroon;
+            this.btnBack.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(764, 446);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(76, 40);
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(278, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(272, 34);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "SCHOLARSHIPS";
+            // 
             // Scholarships
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,6 +135,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCHOLARSHIPS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Scholarships_FormClosing);
+            this.Load += new System.EventHandler(this.Scholarships_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvScholarship)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
