@@ -12,9 +12,20 @@ namespace WindowsFormsApp1
 {
     public partial class Deals_and_Discounts : Form
     {
+        private DataAccess Da { get; set; }
+        
         public Deals_and_Discounts()
         {
             InitializeComponent();
+            this.Da = new DataAccess();
+            this.PopulateGridView();
+        }
+
+        private void PopulateGridView(string sql = "select * from Manage_DandD2;")
+        {
+            var ds = this.Da.ExecuteQuery(sql);
+            this.dataGridView1.AutoGenerateColumns = true;
+            this.dataGridView1.DataSource = ds.Tables[0];
         }
 
         private void button1_Click(object sender, EventArgs e)

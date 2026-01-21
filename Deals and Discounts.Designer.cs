@@ -31,6 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnback = new System.Windows.Forms.Button();
+            this.Deal_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Electronics = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Books = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Foods = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,11 +52,19 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Honeydew;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Deal_Name,
+            this.Electronics,
+            this.Books,
+            this.Foods});
             this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(17, 83);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(821, 322);
             this.dataGridView1.TabIndex = 1;
             // 
@@ -69,6 +81,38 @@
             this.btnback.Text = "Back";
             this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Deal_Name
+            // 
+            this.Deal_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Deal_Name.DataPropertyName = "Deal_Name";
+            this.Deal_Name.HeaderText = "Deal Name";
+            this.Deal_Name.Name = "Deal_Name";
+            this.Deal_Name.ReadOnly = true;
+            // 
+            // Electronics
+            // 
+            this.Electronics.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Electronics.DataPropertyName = "Electronics";
+            this.Electronics.HeaderText = "Electronics";
+            this.Electronics.Name = "Electronics";
+            this.Electronics.ReadOnly = true;
+            // 
+            // Books
+            // 
+            this.Books.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Books.DataPropertyName = "Books";
+            this.Books.HeaderText = "Books";
+            this.Books.Name = "Books";
+            this.Books.ReadOnly = true;
+            // 
+            // Foods
+            // 
+            this.Foods.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Foods.DataPropertyName = "Foods";
+            this.Foods.HeaderText = "Foods";
+            this.Foods.Name = "Foods";
+            this.Foods.ReadOnly = true;
             // 
             // Deals_and_Discounts
             // 
@@ -95,5 +139,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Deal_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Electronics;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Books;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Foods;
     }
 }
