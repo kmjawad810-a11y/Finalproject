@@ -45,15 +45,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.UniName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sch_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eligibility = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(116, 484);
+            this.button5.Location = new System.Drawing.Point(151, 484);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 31);
             this.button5.TabIndex = 14;
@@ -85,7 +85,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(25, 341);
+            this.label6.Location = new System.Drawing.Point(22, 340);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 17);
             this.label6.TabIndex = 12;
@@ -95,7 +95,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(25, 282);
+            this.label5.Location = new System.Drawing.Point(22, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 17);
             this.label5.TabIndex = 11;
@@ -192,7 +192,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(223, 113);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(991, 565);
+            this.panel2.Size = new System.Drawing.Size(885, 565);
             this.panel2.TabIndex = 9;
             // 
             // button1
@@ -236,8 +236,33 @@
             this.amount});
             this.dataGridView1.Location = new System.Drawing.Point(329, 11);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(645, 436);
+            this.dataGridView1.Size = new System.Drawing.Size(544, 436);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // UniName
+            // 
+            this.UniName.HeaderText = "University Name";
+            this.UniName.Name = "UniName";
+            // 
+            // Sch_Name
+            // 
+            this.Sch_Name.HeaderText = "Scholarship Name";
+            this.Sch_Name.Name = "Sch_Name";
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            // 
+            // Eligibility
+            // 
+            this.Eligibility.HeaderText = "Eligibility";
+            this.Eligibility.Name = "Eligibility";
+            // 
+            // amount
+            // 
+            this.amount.HeaderText = "amount";
+            this.amount.Name = "amount";
             // 
             // button3
             // 
@@ -286,37 +311,12 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "SCHOLARSHIP";
             // 
-            // UniName
-            // 
-            this.UniName.HeaderText = "University Name";
-            this.UniName.Name = "UniName";
-            // 
-            // Sch_Name
-            // 
-            this.Sch_Name.HeaderText = "Scholarship Name";
-            this.Sch_Name.Name = "Sch_Name";
-            // 
-            // Description
-            // 
-            this.Description.HeaderText = "Description";
-            this.Description.Name = "Description";
-            // 
-            // Eligibility
-            // 
-            this.Eligibility.HeaderText = "Eligibility";
-            this.Eligibility.Name = "Eligibility";
-            // 
-            // amount
-            // 
-            this.amount.HeaderText = "amount";
-            this.amount.Name = "amount";
-            // 
             // Edit_Sch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(1245, 705);
+            this.ClientSize = new System.Drawing.Size(1116, 686);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);

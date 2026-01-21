@@ -71,7 +71,7 @@
             // 
             // txtsearch
             // 
-            this.txtsearch.Location = new System.Drawing.Point(369, 465);
+            this.txtsearch.Location = new System.Drawing.Point(360, 465);
             this.txtsearch.Multiline = true;
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(283, 31);
@@ -80,7 +80,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.btnAdd.Location = new System.Drawing.Point(767, 465);
+            this.btnAdd.Location = new System.Drawing.Point(730, 465);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 32);
             this.btnAdd.TabIndex = 2;
@@ -90,7 +90,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSearch.Location = new System.Drawing.Point(675, 465);
+            this.btnSearch.Location = new System.Drawing.Point(649, 465);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 32);
             this.btnSearch.TabIndex = 1;
@@ -116,14 +116,14 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(222, 113);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1037, 561);
+            this.panel2.Size = new System.Drawing.Size(823, 561);
             this.panel2.TabIndex = 1;
             // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.Location = new System.Drawing.Point(202, 465);
+            this.btnDelete.Location = new System.Drawing.Point(218, 459);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 32);
             this.btnDelete.TabIndex = 14;
@@ -141,7 +141,7 @@
             this.Fee_Structure});
             this.dataGridView1.Location = new System.Drawing.Point(360, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(665, 436);
+            this.dataGridView1.Size = new System.Drawing.Size(444, 436);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -168,7 +168,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSave.Location = new System.Drawing.Point(39, 465);
+            this.btnSave.Location = new System.Drawing.Point(38, 459);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 31);
             this.btnSave.TabIndex = 4;
@@ -279,7 +279,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(584, 30);
+            this.label11.Location = new System.Drawing.Point(452, 31);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(219, 44);
             this.label11.TabIndex = 23;
@@ -290,7 +290,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(660, 55);
+            this.label1.Location = new System.Drawing.Point(528, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 19);
             this.label1.TabIndex = 24;
@@ -301,7 +301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(1271, 686);
+            this.ClientSize = new System.Drawing.Size(1051, 686);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label11);

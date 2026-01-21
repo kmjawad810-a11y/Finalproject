@@ -53,9 +53,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnlogout);
             this.panel2.Controls.Add(this.btnUnifees);
-            this.panel2.Location = new System.Drawing.Point(104, 200);
+            this.panel2.Location = new System.Drawing.Point(82, 206);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(308, 468);
+            this.panel2.Size = new System.Drawing.Size(375, 462);
             this.panel2.TabIndex = 1;
             // 
             // btnPart
@@ -63,7 +63,7 @@
             this.btnPart.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnPart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnPart.ForeColor = System.Drawing.Color.White;
-            this.btnPart.Location = new System.Drawing.Point(0, 250);
+            this.btnPart.Location = new System.Drawing.Point(33, 212);
             this.btnPart.Name = "btnPart";
             this.btnPart.Size = new System.Drawing.Size(308, 47);
             this.btnPart.TabIndex = 3;
@@ -75,7 +75,7 @@
             this.btnDeals.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnDeals.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnDeals.ForeColor = System.Drawing.Color.White;
-            this.btnDeals.Location = new System.Drawing.Point(0, 327);
+            this.btnDeals.Location = new System.Drawing.Point(33, 313);
             this.btnDeals.Name = "btnDeals";
             this.btnDeals.Size = new System.Drawing.Size(308, 49);
             this.btnDeals.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(18, 220);
+            this.label3.Location = new System.Drawing.Point(49, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(268, 19);
             this.label3.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(70, 300);
+            this.label4.Location = new System.Drawing.Point(105, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(166, 19);
             this.label4.TabIndex = 5;
@@ -107,7 +107,7 @@
             this.btnScholarship.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnScholarship.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnScholarship.ForeColor = System.Drawing.Color.White;
-            this.btnScholarship.Location = new System.Drawing.Point(0, 165);
+            this.btnScholarship.Location = new System.Drawing.Point(33, 107);
             this.btnScholarship.Name = "btnScholarship";
             this.btnScholarship.Size = new System.Drawing.Size(308, 50);
             this.btnScholarship.TabIndex = 0;
@@ -118,7 +118,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 34);
+            this.label2.Location = new System.Drawing.Point(91, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(205, 19);
             this.label2.TabIndex = 3;
@@ -131,7 +131,7 @@
             this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogout.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogout.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnlogout.Location = new System.Drawing.Point(107, 425);
+            this.btnlogout.Location = new System.Drawing.Point(140, 425);
             this.btnlogout.Name = "btnlogout";
             this.btnlogout.Size = new System.Drawing.Size(82, 31);
             this.btnlogout.TabIndex = 5;
@@ -144,12 +144,13 @@
             this.btnUnifees.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUnifees.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUnifees.ForeColor = System.Drawing.Color.White;
-            this.btnUnifees.Location = new System.Drawing.Point(0, 56);
+            this.btnUnifees.Location = new System.Drawing.Point(33, 53);
             this.btnUnifees.Name = "btnUnifees";
             this.btnUnifees.Size = new System.Drawing.Size(308, 48);
             this.btnUnifees.TabIndex = 2;
             this.btnUnifees.Text = "University Fees";
             this.btnUnifees.UseVisualStyleBackColor = false;
+            this.btnUnifees.Click += new System.EventHandler(this.btnUnifees_Click);
             // 
             // label1
             // 

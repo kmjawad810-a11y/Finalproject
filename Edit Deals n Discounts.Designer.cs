@@ -64,9 +64,9 @@
             this.Electronics,
             this.Books,
             this.Foods});
-            this.dataGridView1.Location = new System.Drawing.Point(33, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(277, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(644, 436);
+            this.dataGridView1.Size = new System.Drawing.Size(444, 400);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -92,16 +92,16 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(709, 25);
+            this.txtSearch.Location = new System.Drawing.Point(277, 437);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(311, 24);
+            this.txtSearch.Size = new System.Drawing.Size(259, 23);
             this.txtSearch.TabIndex = 0;
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.btnAdd.Location = new System.Drawing.Point(806, 75);
+            this.btnAdd.Location = new System.Drawing.Point(647, 437);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
@@ -111,7 +111,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(709, 75);
+            this.btnSearch.Location = new System.Drawing.Point(566, 437);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 1;
@@ -135,18 +135,18 @@
             this.panel3.Controls.Add(this.txtElectro);
             this.panel3.Controls.Add(this.txtbook);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(204, 80);
+            this.panel3.Location = new System.Drawing.Point(274, 76);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1044, 608);
+            this.panel3.Size = new System.Drawing.Size(735, 480);
             this.panel3.TabIndex = 7;
             // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(639, 549);
+            this.btnDelete.Location = new System.Drawing.Point(176, 382);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 30);
+            this.btnDelete.Size = new System.Drawing.Size(75, 31);
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -154,7 +154,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(764, 548);
+            this.btnSave.Location = new System.Drawing.Point(44, 382);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 31);
             this.btnSave.TabIndex = 4;
@@ -165,7 +165,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 495);
+            this.label2.Location = new System.Drawing.Point(40, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 19);
             this.label2.TabIndex = 8;
@@ -173,7 +173,7 @@
             // 
             // txtDealName
             // 
-            this.txtDealName.Location = new System.Drawing.Point(140, 497);
+            this.txtDealName.Location = new System.Drawing.Point(151, 141);
             this.txtDealName.Multiline = true;
             this.txtDealName.Name = "txtDealName";
             this.txtDealName.Size = new System.Drawing.Size(100, 20);
@@ -181,7 +181,7 @@
             // 
             // txtfoods
             // 
-            this.txtfoods.Location = new System.Drawing.Point(451, 538);
+            this.txtfoods.Location = new System.Drawing.Point(151, 265);
             this.txtfoods.Multiline = true;
             this.txtfoods.Name = "txtfoods";
             this.txtfoods.Size = new System.Drawing.Size(100, 20);
@@ -191,7 +191,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(340, 498);
+            this.label5.Location = new System.Drawing.Point(40, 225);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 19);
             this.label5.TabIndex = 11;
@@ -201,7 +201,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(29, 536);
+            this.label3.Location = new System.Drawing.Point(40, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 19);
             this.label3.TabIndex = 9;
@@ -210,7 +210,7 @@
             // 
             // txtElectro
             // 
-            this.txtElectro.Location = new System.Drawing.Point(451, 500);
+            this.txtElectro.Location = new System.Drawing.Point(151, 227);
             this.txtElectro.Multiline = true;
             this.txtElectro.Name = "txtElectro";
             this.txtElectro.Size = new System.Drawing.Size(100, 20);
@@ -218,7 +218,7 @@
             // 
             // txtbook
             // 
-            this.txtbook.Location = new System.Drawing.Point(140, 538);
+            this.txtbook.Location = new System.Drawing.Point(151, 182);
             this.txtbook.Multiline = true;
             this.txtbook.Name = "txtbook";
             this.txtbook.Size = new System.Drawing.Size(100, 20);
@@ -228,7 +228,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(340, 536);
+            this.label4.Location = new System.Drawing.Point(40, 263);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 19);
             this.label4.TabIndex = 10;
@@ -286,7 +286,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(1287, 706);
+            this.ClientSize = new System.Drawing.Size(1030, 576);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
