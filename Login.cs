@@ -102,5 +102,12 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void lblRegi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Sign_up signUpForm = new Sign_up();
+            signUpForm.Show();
+        }
     }
 }

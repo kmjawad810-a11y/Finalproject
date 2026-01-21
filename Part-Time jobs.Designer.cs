@@ -83,6 +83,7 @@
             // CompanyName
             // 
             this.CompanyName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CompanyName.DataPropertyName = "CompanyName";
             this.CompanyName.HeaderText = "Company Name";
             this.CompanyName.Name = "CompanyName";
             this.CompanyName.ReadOnly = true;
@@ -90,6 +91,7 @@
             // Corporate
             // 
             this.Corporate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Corporate.DataPropertyName = "Corporate";
             this.Corporate.HeaderText = "Corporate";
             this.Corporate.Name = "Corporate";
             this.Corporate.ReadOnly = true;
@@ -97,6 +99,7 @@
             // Freelancer
             // 
             this.Freelancer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Freelancer.DataPropertyName = "Freelancer";
             this.Freelancer.HeaderText = "Freelancer";
             this.Freelancer.Name = "Freelancer";
             this.Freelancer.ReadOnly = true;
@@ -104,6 +107,7 @@
             // startup
             // 
             this.startup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.startup.DataPropertyName = "startup";
             this.startup.HeaderText = "Startup";
             this.startup.Name = "startup";
             this.startup.ReadOnly = true;

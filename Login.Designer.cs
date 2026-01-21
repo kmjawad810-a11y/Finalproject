@@ -34,7 +34,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +52,6 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtpass);
             this.panel1.Controls.Add(this.txtName);
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -72,6 +70,7 @@
             this.lblRegi.TabIndex = 19;
             this.lblRegi.TabStop = true;
             this.lblRegi.Text = "Register";
+            this.lblRegi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblRegi_LinkClicked);
             // 
             // label6
             // 
@@ -102,6 +101,7 @@
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(199, 25);
             this.txtpass.TabIndex = 6;
+            this.txtpass.UseSystemPasswordChar = true;
             // 
             // txtName
             // 
@@ -110,16 +110,6 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(199, 25);
             this.txtName.TabIndex = 5;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(319, 484);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 35);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Admistrator Log in";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // btnLogin
             // 
@@ -216,7 +206,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

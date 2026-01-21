@@ -75,5 +75,12 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login loginForm = new Login();
+            loginForm.Show();
+        }
     }
 }
