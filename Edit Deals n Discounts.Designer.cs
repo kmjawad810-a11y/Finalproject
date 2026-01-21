@@ -58,6 +58,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Deal_Name,
@@ -66,8 +67,10 @@
             this.Foods});
             this.dataGridView1.Location = new System.Drawing.Point(33, 25);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(644, 436);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // txtSearch
             // 
@@ -86,6 +89,7 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSearch
             // 
@@ -96,6 +100,7 @@
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // panel3
             // 
@@ -129,6 +134,7 @@
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -139,6 +145,7 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label2
             // 
@@ -263,26 +270,34 @@
             // Deal_Name
             // 
             this.Deal_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Deal_Name.DataPropertyName = "Deal_Name";
             this.Deal_Name.HeaderText = "Deal Name";
             this.Deal_Name.Name = "Deal_Name";
+            this.Deal_Name.ReadOnly = true;
             // 
             // Electronics
             // 
             this.Electronics.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Electronics.DataPropertyName = "Electronics";
             this.Electronics.HeaderText = "Electronics";
             this.Electronics.Name = "Electronics";
+            this.Electronics.ReadOnly = true;
             // 
             // Books
             // 
             this.Books.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Books.DataPropertyName = "Books";
             this.Books.HeaderText = "Books";
             this.Books.Name = "Books";
+            this.Books.ReadOnly = true;
             // 
             // Foods
             // 
             this.Foods.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Foods.DataPropertyName = "Foods";
             this.Foods.HeaderText = "Foods";
             this.Foods.Name = "Foods";
+            this.Foods.ReadOnly = true;
             // 
             // Edit_Deals_n_Discounts
             // 
