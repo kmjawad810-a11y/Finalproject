@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnregi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtpass = new System.Windows.Forms.TextBox();
@@ -123,7 +123,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel2.Controls.Add(this.cmbrole);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnBack);
             this.panel2.Controls.Add(this.txtUserName);
             this.panel2.Controls.Add(this.btnregi);
             this.panel2.Controls.Add(this.label3);
@@ -136,18 +136,17 @@
             this.panel2.Size = new System.Drawing.Size(280, 649);
             this.panel2.TabIndex = 15;
             // 
-            // button2
+            // btnBack
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(99, 538);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 33);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnBack.BackColor = System.Drawing.Color.IndianRed;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(99, 538);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(68, 33);
+            this.btnBack.TabIndex = 14;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // btnregi
             // 
@@ -160,7 +159,7 @@
             this.btnregi.TabIndex = 13;
             this.btnregi.Text = "Register";
             this.btnregi.UseVisualStyleBackColor = false;
-            this.btnregi.Click += new System.EventHandler(this.button1_Click);
+            this.btnregi.Click += new System.EventHandler(this.btnregi_Click);
             // 
             // label1
             // 
@@ -203,7 +202,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign_up";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sign_up_FormClosing);
-            this.Load += new System.EventHandler(this.Sign_up_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -216,7 +214,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnregi;
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.TextBox txtUserName;

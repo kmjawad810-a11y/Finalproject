@@ -12,24 +12,12 @@ namespace WindowsFormsApp1
 {
     public partial class Sign_up : Form
     {
+        private DataAccess Da { get; set; }
         public Sign_up()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login lg = new Login();
-            lg.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login lg = new Login();
+            this.Da = new DataAccess();
             
-            lg.Show();
         }
 
         private void Sign_up_FormClosing(object sender, FormClosingEventArgs e)
@@ -42,9 +30,62 @@ namespace WindowsFormsApp1
 
         }
 
-        private void Sign_up_Load(object sender, EventArgs e)
+        private void btnregi_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string userName = txtUserName.Text.Trim();
+                string password = txtpass.Text.Trim();
+                string role = cmbrole.SelectedItem?.ToString();
 
+                // Validate inputs
+                if (string.IsNullOrEmpty(userName))
+                {
+                    MessageBox.Show("Please enter a username", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtUserName.Focus();
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(password))
+                {
+                    MessageBox.Show("Please enter a password", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtpass.Focus();
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(role))
+                {
+                    MessageBox.Show("Please select a role", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cmbrole.Focus();
+                    return;
+                }
+
+                // Insert into database
+                string query = "INSERT INTO SignUpDB (Username, Password, Role) VALUES ('" + userName + "', '" + password + "', '" + role + "')";
+                int rowsAffected = this.Da.ExecuteDMLQuery(query);
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                    // Clear form fields
+                    FormClear.ClearAllControls(this);
+
+
+                    // Navigate back to Login
+                    this.Hide();
+                    Login login = new Login();
+                    login.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Registration failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

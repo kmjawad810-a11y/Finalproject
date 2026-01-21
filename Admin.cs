@@ -51,19 +51,7 @@ namespace WindowsFormsApp1
             UF.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Edit_Part_Time_Job ptj = new Edit_Part_Time_Job();
-            ptj.Show();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Edit_Loans ln = new Edit_Loans();
-            ln.Show();
-        }
 
         private void Admin_FormClosing(object sender, FormClosingEventArgs e)
         {

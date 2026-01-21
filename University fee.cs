@@ -17,12 +17,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Student_Page sp = new Student_Page();
-            sp.Show();
-        }
 
         private void University_fee_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -32,6 +26,13 @@ namespace WindowsFormsApp1
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Student_Page sp = new Student_Page();
+            sp.Show();
         }
     }
 }
