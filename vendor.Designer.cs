@@ -32,8 +32,6 @@
             this.dgvVendor = new System.Windows.Forms.DataGridView();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtVendorID = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -92,8 +90,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.txtVendorID);
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Controls.Add(this.btnSave);
             this.panel3.Controls.Add(this.label5);
@@ -109,24 +105,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(287, 418);
             this.panel3.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 16);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Vendor ID";
-            // 
-            // txtVendorID
-            // 
-            this.txtVendorID.Location = new System.Drawing.Point(122, 68);
-            this.txtVendorID.Multiline = true;
-            this.txtVendorID.Name = "txtVendorID";
-            this.txtVendorID.Size = new System.Drawing.Size(100, 20);
-            this.txtVendorID.TabIndex = 15;
             // 
             // btnDelete
             // 
@@ -158,7 +136,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 225);
+            this.label5.Location = new System.Drawing.Point(14, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 16);
             this.label5.TabIndex = 11;
@@ -168,7 +146,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 187);
+            this.label4.Location = new System.Drawing.Point(14, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 16);
             this.label4.TabIndex = 10;
@@ -178,7 +156,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 152);
+            this.label3.Location = new System.Drawing.Point(14, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 16);
             this.label3.TabIndex = 9;
@@ -188,7 +166,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 113);
+            this.label2.Location = new System.Drawing.Point(14, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 16);
             this.label2.TabIndex = 8;
@@ -206,7 +184,7 @@
             // 
             // txtStartup
             // 
-            this.txtStartup.Location = new System.Drawing.Point(122, 225);
+            this.txtStartup.Location = new System.Drawing.Point(127, 193);
             this.txtStartup.Multiline = true;
             this.txtStartup.Name = "txtStartup";
             this.txtStartup.Size = new System.Drawing.Size(100, 20);
@@ -214,7 +192,7 @@
             // 
             // txtFreelancer
             // 
-            this.txtFreelancer.Location = new System.Drawing.Point(122, 187);
+            this.txtFreelancer.Location = new System.Drawing.Point(127, 155);
             this.txtFreelancer.Multiline = true;
             this.txtFreelancer.Name = "txtFreelancer";
             this.txtFreelancer.Size = new System.Drawing.Size(100, 20);
@@ -222,7 +200,7 @@
             // 
             // txtCorpo
             // 
-            this.txtCorpo.Location = new System.Drawing.Point(122, 151);
+            this.txtCorpo.Location = new System.Drawing.Point(127, 119);
             this.txtCorpo.Multiline = true;
             this.txtCorpo.Name = "txtCorpo";
             this.txtCorpo.Size = new System.Drawing.Size(100, 20);
@@ -230,7 +208,7 @@
             // 
             // txtCompanyName
             // 
-            this.txtCompanyName.Location = new System.Drawing.Point(122, 112);
+            this.txtCompanyName.Location = new System.Drawing.Point(127, 80);
             this.txtCompanyName.Multiline = true;
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(100, 20);
@@ -365,8 +343,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtVendorID;
         private System.Windows.Forms.DataGridViewTextBoxColumn JobGiver_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompanyName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Corporate;

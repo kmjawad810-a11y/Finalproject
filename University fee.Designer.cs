@@ -31,6 +31,10 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.dgvUniFee = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.Uni_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Program = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Country = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fee_Structure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUniFee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +58,11 @@
             this.dgvUniFee.AllowUserToDeleteRows = false;
             this.dgvUniFee.BackgroundColor = System.Drawing.Color.Honeydew;
             this.dgvUniFee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUniFee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Uni_name,
+            this.Program,
+            this.Country,
+            this.Fee_Structure});
             this.dgvUniFee.Location = new System.Drawing.Point(12, 119);
             this.dgvUniFee.Name = "dgvUniFee";
             this.dgvUniFee.ReadOnly = true;
@@ -72,6 +81,38 @@
             this.label1.Size = new System.Drawing.Size(310, 34);
             this.label1.TabIndex = 4;
             this.label1.Text = "UNIVERSITY FEES";
+            // 
+            // Uni_name
+            // 
+            this.Uni_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Uni_name.DataPropertyName = "Uni_name";
+            this.Uni_name.HeaderText = "University Name";
+            this.Uni_name.Name = "Uni_name";
+            this.Uni_name.ReadOnly = true;
+            // 
+            // Program
+            // 
+            this.Program.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Program.DataPropertyName = "Program";
+            this.Program.HeaderText = "Program";
+            this.Program.Name = "Program";
+            this.Program.ReadOnly = true;
+            // 
+            // Country
+            // 
+            this.Country.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Country.DataPropertyName = "Country";
+            this.Country.HeaderText = "Country";
+            this.Country.Name = "Country";
+            this.Country.ReadOnly = true;
+            // 
+            // Fee_Structure
+            // 
+            this.Fee_Structure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Fee_Structure.DataPropertyName = "Fee_Structure";
+            this.Fee_Structure.HeaderText = "Fee Structure";
+            this.Fee_Structure.Name = "Fee_Structure";
+            this.Fee_Structure.ReadOnly = true;
             // 
             // University_fee
             // 
@@ -96,5 +137,9 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.DataGridView dgvUniFee;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Uni_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Program;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Country;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fee_Structure;
     }
 }
