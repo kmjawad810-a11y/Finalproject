@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Edit_Deals_n_Discounts());
+            Application.Run(new Login());
         }
     }
 }

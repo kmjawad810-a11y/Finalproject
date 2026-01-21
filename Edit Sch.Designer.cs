@@ -303,21 +303,21 @@
             // 
             // UniName
             // 
-            this.UniName.DataPropertyName = "UniName";
+            this.UniName.DataPropertyName = "Uni_Name";
             this.UniName.HeaderText = "University Name";
             this.UniName.Name = "UniName";
             this.UniName.ReadOnly = true;
             // 
             // Sch_Name
             // 
-            this.Sch_Name.DataPropertyName = "SchName";
+            this.Sch_Name.DataPropertyName = "Sch_Name";
             this.Sch_Name.HeaderText = "Scholarship Name";
             this.Sch_Name.Name = "Sch_Name";
             this.Sch_Name.ReadOnly = true;
             // 
             // Description
             // 
-            this.Description.DataPropertyName = "Descp";
+            this.Description.DataPropertyName = "Description";
             this.Description.HeaderText = "Description";
             this.Description.Name = "Description";
             this.Description.ReadOnly = true;
@@ -331,7 +331,7 @@
             // 
             // amount
             // 
-            this.amount.DataPropertyName = "Amount";
+            this.amount.DataPropertyName = "amount";
             this.amount.HeaderText = "amount";
             this.amount.Name = "amount";
             this.amount.ReadOnly = true;
