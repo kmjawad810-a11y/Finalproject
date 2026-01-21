@@ -28,58 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAmount = new System.Windows.Forms.TextBox();
+            this.txtEligibility = new System.Windows.Forms.TextBox();
+            this.txtDescp = new System.Windows.Forms.TextBox();
+            this.txtScholarship = new System.Windows.Forms.TextBox();
+            this.txtUniName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.dgvScholarship = new System.Windows.Forms.DataGridView();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.Admin_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UniName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sch_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eligibility = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvScholarship)).BeginInit();
             this.SuspendLayout();
             // 
-            // button5
+            // btnDelete
             // 
-            this.button5.BackColor = System.Drawing.Color.IndianRed;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(116, 484);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 31);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "Delete";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(116, 484);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 31);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button4
+            // btnSave
             // 
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(25, 484);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 31);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSave.Location = new System.Drawing.Point(25, 484);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 31);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label6
             // 
@@ -131,126 +134,131 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Uni Name:";
             // 
-            // textBox6
+            // txtAmount
             // 
-            this.textBox6.Location = new System.Drawing.Point(126, 340);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
+            this.txtAmount.Location = new System.Drawing.Point(126, 340);
+            this.txtAmount.Multiline = true;
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtAmount.TabIndex = 5;
             // 
-            // textBox5
+            // txtEligibility
             // 
-            this.textBox5.Location = new System.Drawing.Point(126, 282);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.txtEligibility.Location = new System.Drawing.Point(126, 282);
+            this.txtEligibility.Multiline = true;
+            this.txtEligibility.Name = "txtEligibility";
+            this.txtEligibility.Size = new System.Drawing.Size(100, 20);
+            this.txtEligibility.TabIndex = 4;
             // 
-            // textBox4
+            // txtDescp
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 215);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.txtDescp.Location = new System.Drawing.Point(126, 215);
+            this.txtDescp.Multiline = true;
+            this.txtDescp.Name = "txtDescp";
+            this.txtDescp.Size = new System.Drawing.Size(100, 20);
+            this.txtDescp.TabIndex = 3;
             // 
-            // textBox3
+            // txtScholarship
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 155);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtScholarship.Location = new System.Drawing.Point(126, 155);
+            this.txtScholarship.Multiline = true;
+            this.txtScholarship.Name = "txtScholarship";
+            this.txtScholarship.Size = new System.Drawing.Size(100, 20);
+            this.txtScholarship.TabIndex = 2;
             // 
-            // textBox2
+            // txtUniName
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 89);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtUniName.Location = new System.Drawing.Point(126, 89);
+            this.txtUniName.Multiline = true;
+            this.txtUniName.Name = "txtUniName";
+            this.txtUniName.Size = new System.Drawing.Size(100, 20);
+            this.txtUniName.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.btnSearch);
+            this.panel2.Controls.Add(this.btnAdd);
+            this.panel2.Controls.Add(this.txtSearch);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.btnSave);
+            this.panel2.Controls.Add(this.dgvScholarship);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.txtAmount);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.txtEligibility);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtDescp);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtScholarship);
+            this.panel2.Controls.Add(this.txtUniName);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(223, 113);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(991, 565);
             this.panel2.TabIndex = 9;
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(632, 475);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSearch.Location = new System.Drawing.Point(632, 475);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 32);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // button2
+            // btnAdd
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(713, 475);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 32);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.Location = new System.Drawing.Point(713, 475);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 32);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(329, 475);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 32);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtSearch.Location = new System.Drawing.Point(329, 475);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(283, 32);
+            this.txtSearch.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgvScholarship
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvScholarship.AllowUserToAddRows = false;
+            this.dgvScholarship.AllowUserToDeleteRows = false;
+            this.dgvScholarship.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvScholarship.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Admin_id,
             this.UniName,
             this.Sch_Name,
             this.Description,
             this.Eligibility,
             this.amount});
-            this.dataGridView1.Location = new System.Drawing.Point(329, 11);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(645, 436);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvScholarship.Location = new System.Drawing.Point(329, 11);
+            this.dgvScholarship.Name = "dgvScholarship";
+            this.dgvScholarship.ReadOnly = true;
+            this.dgvScholarship.Size = new System.Drawing.Size(645, 436);
+            this.dgvScholarship.TabIndex = 0;
+            this.dgvScholarship.DoubleClick += new System.EventHandler(this.dgvScholarship_DoubleClick);
             // 
-            // button3
+            // btnDashboard
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(12, 376);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(205, 39);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Dashboard";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnDashboard.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(12, 376);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(205, 39);
+            this.btnDashboard.TabIndex = 3;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label1
             // 
@@ -286,30 +294,47 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "SCHOLARSHIP";
             // 
+            // Admin_id
+            // 
+            this.Admin_id.DataPropertyName = "Admin_id";
+            this.Admin_id.HeaderText = "Admin_id";
+            this.Admin_id.Name = "Admin_id";
+            this.Admin_id.ReadOnly = true;
+            // 
             // UniName
             // 
+            this.UniName.DataPropertyName = "UniName";
             this.UniName.HeaderText = "University Name";
             this.UniName.Name = "UniName";
+            this.UniName.ReadOnly = true;
             // 
             // Sch_Name
             // 
+            this.Sch_Name.DataPropertyName = "SchName";
             this.Sch_Name.HeaderText = "Scholarship Name";
             this.Sch_Name.Name = "Sch_Name";
+            this.Sch_Name.ReadOnly = true;
             // 
             // Description
             // 
+            this.Description.DataPropertyName = "Descp";
             this.Description.HeaderText = "Description";
             this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
             // 
             // Eligibility
             // 
+            this.Eligibility.DataPropertyName = "Eligibility";
             this.Eligibility.HeaderText = "Eligibility";
             this.Eligibility.Name = "Eligibility";
+            this.Eligibility.ReadOnly = true;
             // 
             // amount
             // 
+            this.amount.DataPropertyName = "Amount";
             this.amount.HeaderText = "amount";
             this.amount.Name = "amount";
+            this.amount.ReadOnly = true;
             // 
             // Edit_Sch
             // 
@@ -321,41 +346,42 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnDashboard);
             this.Name = "Edit_Sch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit_Sch";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Edit_Sch_FormClosing);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvScholarship)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAmount;
+        private System.Windows.Forms.TextBox txtEligibility;
+        private System.Windows.Forms.TextBox txtDescp;
+        private System.Windows.Forms.TextBox txtScholarship;
+        private System.Windows.Forms.TextBox txtUniName;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvScholarship;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Admin_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn UniName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sch_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;

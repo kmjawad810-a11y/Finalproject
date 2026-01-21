@@ -118,7 +118,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 34);
+            this.label2.Location = new System.Drawing.Point(51, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(205, 19);
             this.label2.TabIndex = 3;
@@ -144,7 +144,7 @@
             this.btnUnifees.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUnifees.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUnifees.ForeColor = System.Drawing.Color.White;
-            this.btnUnifees.Location = new System.Drawing.Point(0, 56);
+            this.btnUnifees.Location = new System.Drawing.Point(0, 82);
             this.btnUnifees.Name = "btnUnifees";
             this.btnUnifees.Size = new System.Drawing.Size(308, 48);
             this.btnUnifees.TabIndex = 2;

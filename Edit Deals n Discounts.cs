@@ -17,21 +17,11 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Admin ad = new Admin();
-            ad.Show();
-        }
+
 
         private void Edit_Deals_n_Discounts_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -39,7 +29,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
             Admin ad = new Admin();

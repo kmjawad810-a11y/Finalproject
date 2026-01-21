@@ -17,16 +17,18 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Student_Page sp = new Student_Page();
-            sp.Show();
-        }
+
 
         private void Part_Time_jobs_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Student_Page sp = new Student_Page();
+            sp.Show();
         }
     }
 }

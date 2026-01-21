@@ -28,33 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgvScholarship = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.UniversityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScholarshipName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Eligibility = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvScholarship)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvScholarship
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Honeydew;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 86);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(828, 338);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvScholarship.AllowUserToAddRows = false;
+            this.dgvScholarship.AllowUserToDeleteRows = false;
+            this.dgvScholarship.BackgroundColor = System.Drawing.Color.Honeydew;
+            this.dgvScholarship.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvScholarship.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UniversityName,
+            this.ScholarshipName,
+            this.Description,
+            this.Eligibility,
+            this.Amount});
+            this.dgvScholarship.Location = new System.Drawing.Point(12, 86);
+            this.dgvScholarship.Name = "dgvScholarship";
+            this.dgvScholarship.ReadOnly = true;
+            this.dgvScholarship.Size = new System.Drawing.Size(828, 338);
+            this.dgvScholarship.TabIndex = 4;
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(764, 446);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 40);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBack.BackColor = System.Drawing.Color.Maroon;
+            this.btnBack.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(764, 446);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(76, 40);
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label2
             // 
@@ -68,6 +82,46 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "SCHOLARSHIPS";
             // 
+            // UniversityName
+            // 
+            this.UniversityName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.UniversityName.DataPropertyName = "Uni_Name";
+            this.UniversityName.HeaderText = "University Name";
+            this.UniversityName.Name = "UniversityName";
+            this.UniversityName.ReadOnly = true;
+            // 
+            // ScholarshipName
+            // 
+            this.ScholarshipName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ScholarshipName.DataPropertyName = "Sch_Name";
+            this.ScholarshipName.HeaderText = "Scholarship Name";
+            this.ScholarshipName.Name = "ScholarshipName";
+            this.ScholarshipName.ReadOnly = true;
+            // 
+            // Description
+            // 
+            this.Description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Description.DataPropertyName = "Description";
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
+            // 
+            // Eligibility
+            // 
+            this.Eligibility.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Eligibility.DataPropertyName = "Eligibility";
+            this.Eligibility.HeaderText = "Eligibility";
+            this.Eligibility.Name = "Eligibility";
+            this.Eligibility.ReadOnly = true;
+            // 
+            // Amount
+            // 
+            this.Amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Amount.DataPropertyName = "amount";
+            this.Amount.HeaderText = "Amount";
+            this.Amount.Name = "Amount";
+            this.Amount.ReadOnly = true;
+            // 
             // Scholarships
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -75,21 +129,26 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(851, 511);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.dgvScholarship);
             this.Name = "Scholarships";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCHOLARSHIPS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Scholarships_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvScholarship)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvScholarship;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UniversityName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScholarshipName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Eligibility;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
     }
 }

@@ -7,73 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace WindowsFormsApp1
 {
     public partial class Login : Form
     {
         private DataAccess Da { get; set; }
+        
         public Login()
         {
             InitializeComponent();
             this.Da = new DataAccess();
         }
 
-
-
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             try
             {
-                string userName = txtName.Text.Trim();
-                string password = txtpass.Text.Trim();
+                var userName = this.txtName.Text.Trim();
+                var password = this.txtpass.Text.Trim();
 
-                // Validate inputs
                 if (string.IsNullOrEmpty(userName))
                 {
-                    MessageBox.Show("Please enter your username", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtName.Focus();
+                    MessageBox.Show("Please enter your username");
+                    this.txtName.Focus();
                     return;
                 }
 
                 if (string.IsNullOrEmpty(password))
                 {
-                    MessageBox.Show("Please enter your password", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtpass.Focus();
+                    MessageBox.Show("Please enter your password");
+                    this.txtpass.Focus();
                     return;
                 }
 
-                // Query
-                string query = "SELECT Role, Status FROM SignUpDB WHERE Username = '" + userName + "' AND Password = '" + password + "'";
-                DataTable dt = this.Da.ExecuteQueryTable(query);
+                var sql = "select Role, Status from SignUpDB where Username = '" + userName + "' and Password = '" + password + "';";
+                var dt = this.Da.ExecuteQueryTable(sql);
 
                 if (dt.Rows.Count > 0)
                 {
-                    // User found - check status
-                    int status = Convert.ToInt32(dt.Rows[0]["Status"]);
-                    string role = dt.Rows[0]["Role"].ToString();
+                    var status = Convert.ToInt32(dt.Rows[0]["Status"]);
+                    var role = dt.Rows[0]["Role"].ToString();
 
                     if (status == 0)
                     {
-                        MessageBox.Show("Your account is inactive. Please contact the administrator.", "Account Inactive", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        txtpass.Clear();
+                        MessageBox.Show("Your account is inactive. Please contact the administrator.");
+                        this.txtpass.Clear();
                         return;
                     }
 
-                    // Status is 1 - Active account
-                    MessageBox.Show("Welcome " + userName + "!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Welcome " + userName + "!");
 
-                    // Clear form using FormClear
+                    UserSession.LoggedInUsername = userName;
+                    UserSession.LoggedInRole = role;
+
                     FormClear.ClearAllControls(this);
 
-                    // Navigate based on role
                     this.Hide();
                     
                     if (role.ToUpper() == "ADMIN")
@@ -93,21 +82,25 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
-                        MessageBox.Show("Invalid role assigned to this account.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Invalid role assigned to this account.");
                         this.Show();
                     }
                 }
                 else
                 {
-                    // Invalid credentials
-                    MessageBox.Show("Invalid username or password", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtpass.Clear();
+                    MessageBox.Show("Invalid username or password");
+                    this.txtpass.Clear();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred: " + ex.Message);
             }
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

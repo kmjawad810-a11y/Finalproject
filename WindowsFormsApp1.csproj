@@ -119,6 +119,7 @@
     <Compile Include="University fee.Designer.cs">
       <DependentUpon>University fee.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSession.cs" />
     <Compile Include="vendor.cs">
       <SubType>Form</SubType>
     </Compile>

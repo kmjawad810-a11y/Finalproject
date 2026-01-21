@@ -69,7 +69,7 @@
             this.editdeals.BackColor = System.Drawing.SystemColors.HotTrack;
             this.editdeals.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.editdeals.ForeColor = System.Drawing.Color.White;
-            this.editdeals.Location = new System.Drawing.Point(57, 89);
+            this.editdeals.Location = new System.Drawing.Point(57, 116);
             this.editdeals.Name = "editdeals";
             this.editdeals.Size = new System.Drawing.Size(286, 46);
             this.editdeals.TabIndex = 7;
