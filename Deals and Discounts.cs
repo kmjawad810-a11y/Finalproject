@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
             this.PopulateGridView();
         }
 
-        private void PopulateGridView(string sql = "select * from Manage_DandD2;")
+        private void PopulateGridView(string sql = "select Deal_Name, Electronics,Books,Foods from Manage_DandD2;")
         {
             var ds = this.Da.ExecuteQuery(sql);
             this.dataGridView1.AutoGenerateColumns = true;
