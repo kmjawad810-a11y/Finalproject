@@ -31,15 +31,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.cmbrole = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnregi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,11 +58,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Alexandria Whitehouse", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Cornsilk;
             this.label5.Location = new System.Drawing.Point(106, 313);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 36);
+            this.label5.Size = new System.Drawing.Size(94, 31);
             this.label5.TabIndex = 10;
             this.label5.Text = "Helper";
             // 
@@ -77,24 +77,24 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "STUDENT";
             // 
-            // textBox1
+            // txtUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 239);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtUserName.Location = new System.Drawing.Point(32, 239);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(190, 20);
+            this.txtUserName.TabIndex = 8;
             // 
-            // comboBox1
+            // cmbrole
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbrole.FormattingEnabled = true;
+            this.cmbrole.Items.AddRange(new object[] {
             "ADMIN",
             "STUDENT",
             "VENDOR"});
-            this.comboBox1.Location = new System.Drawing.Point(32, 377);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 21);
-            this.comboBox1.TabIndex = 18;
+            this.cmbrole.Location = new System.Drawing.Point(32, 377);
+            this.cmbrole.Name = "cmbrole";
+            this.cmbrole.Size = new System.Drawing.Size(190, 21);
+            this.cmbrole.TabIndex = 18;
             // 
             // label3
             // 
@@ -122,14 +122,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.cmbrole);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.txtUserName);
+            this.panel2.Controls.Add(this.btnregi);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtpass);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(306, 3);
             this.panel2.Name = "panel2";
@@ -149,18 +149,18 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnregi
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(32, 421);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 32);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Register";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnregi.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnregi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregi.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnregi.Location = new System.Drawing.Point(32, 421);
+            this.btnregi.Name = "btnregi";
+            this.btnregi.Size = new System.Drawing.Size(190, 32);
+            this.btnregi.TabIndex = 13;
+            this.btnregi.Text = "Register";
+            this.btnregi.UseVisualStyleBackColor = false;
+            this.btnregi.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -173,12 +173,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "User Name:";
             // 
-            // textBox4
+            // txtpass
             // 
-            this.textBox4.Location = new System.Drawing.Point(32, 309);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 20);
-            this.textBox4.TabIndex = 11;
+            this.txtpass.Location = new System.Drawing.Point(32, 309);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(190, 20);
+            this.txtpass.TabIndex = 11;
             // 
             // label6
             // 
@@ -203,6 +203,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign_up";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sign_up_FormClosing);
+            this.Load += new System.EventHandler(this.Sign_up_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -216,13 +217,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnregi;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbrole;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

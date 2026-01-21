@@ -55,6 +55,7 @@
     <Compile Include="CapsulePanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DataAccess.cs" />
     <Compile Include="Deals and Discounts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +92,7 @@
     <Compile Include="Edit Uni Fees.Designer.cs">
       <DependentUpon>Edit Uni Fees.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormClear.cs" />
     <Compile Include="Loans.cs">
       <SubType>Form</SubType>
     </Compile>

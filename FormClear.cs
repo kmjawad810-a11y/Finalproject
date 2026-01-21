@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    internal static class FormClear
+    {
+        public static void ClearAllControls(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is TextBox)
+                    ((TextBox)c).Clear();
+
+                else if (c is ComboBox)
+                    ((ComboBox)c).SelectedIndex = -1;
+
+                else if (c is CheckBox)
+                    ((CheckBox)c).Checked = false;
+
+                else if (c is DataGridView)
+                    ((DataGridView)c).ClearSelection();
+
+                else if (c is DateTimePicker)
+                    ((DateTimePicker)c).Value = DateTime.Now;
+
+                else if (c.HasChildren)
+                    ClearAllControls(c);
+            }
+        }
+    }
+}

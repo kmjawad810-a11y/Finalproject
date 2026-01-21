@@ -21,8 +21,8 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string userName = textBox1.Text.Trim();
-            string Password = textBox2.Text.Trim();
+            string userName = txtName.Text.Trim();
+            string Password = txtpass.Text.Trim();
 
             if (userName == "ashraful" && Password == "nobody")
             {
@@ -33,8 +33,8 @@ namespace WindowsFormsApp1
                 Student_Page sp = new Student_Page();
                 sp.Show();
 
-                textBox1.Text = "";
-                textBox2.Text = "";
+                txtName.Text = "";
+                txtpass.Text = "";
             }
             else
             {
@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Invalid student credentials", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 // Clear password field for security
-                textBox2.Clear();
+                txtpass.Clear();
             }
 
         }
@@ -58,8 +58,8 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             // Get user inputs from textboxes
-            string enteredName = textBox1.Text.Trim();
-            string enteredPassword = textBox2.Text.Trim();
+            string enteredName = txtName.Text.Trim();
+            string enteredPassword = txtpass.Text.Trim();
             
             // Check if credentials match the predefined values
             if (enteredName == "ashraful" && enteredPassword == "nobody")
@@ -67,8 +67,8 @@ namespace WindowsFormsApp1
                 // Show success message
                 MessageBox.Show("Welcome sir", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                textBox1.Text = "";
-                textBox2.Text = "";
+                txtName.Text = "";
+                txtpass.Text = "";
 
                 // Navigate to Admin page
                 this.Hide();
@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Login denied", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
                 // Clear password field for security
-                textBox2.Clear();
+                txtpass.Clear();
             }
         }
 
@@ -107,6 +107,11 @@ namespace WindowsFormsApp1
             Sign_up su = new Sign_up();
 
             su.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
