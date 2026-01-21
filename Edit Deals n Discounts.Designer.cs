@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Deal_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Electronics = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Books = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Foods = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -51,6 +47,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.Deal_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Electronics = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Books = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Foods = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -68,26 +68,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(644, 436);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Deal_Name
-            // 
-            this.Deal_Name.HeaderText = "Deal Name";
-            this.Deal_Name.Name = "Deal_Name";
-            // 
-            // Electronics
-            // 
-            this.Electronics.HeaderText = "Electronics";
-            this.Electronics.Name = "Electronics";
-            // 
-            // Books
-            // 
-            this.Books.HeaderText = "Books";
-            this.Books.Name = "Books";
-            // 
-            // Foods
-            // 
-            this.Foods.HeaderText = "Foods";
-            this.Foods.Name = "Foods";
             // 
             // txtSearch
             // 
@@ -143,7 +123,7 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(639, 549);
+            this.btnDelete.Location = new System.Drawing.Point(640, 548);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 30);
             this.btnDelete.TabIndex = 14;
@@ -279,6 +259,30 @@
             this.label9.Size = new System.Drawing.Size(64, 22);
             this.label9.TabIndex = 14;
             this.label9.Text = "panel";
+            // 
+            // Deal_Name
+            // 
+            this.Deal_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Deal_Name.HeaderText = "Deal Name";
+            this.Deal_Name.Name = "Deal_Name";
+            // 
+            // Electronics
+            // 
+            this.Electronics.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Electronics.HeaderText = "Electronics";
+            this.Electronics.Name = "Electronics";
+            // 
+            // Books
+            // 
+            this.Books.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Books.HeaderText = "Books";
+            this.Books.Name = "Books";
+            // 
+            // Foods
+            // 
+            this.Foods.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Foods.HeaderText = "Foods";
+            this.Foods.Name = "Foods";
             // 
             // Edit_Deals_n_Discounts
             // 
