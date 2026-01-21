@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
             this.PopulateGridView();
         }
 
-        private void PopulateGridView(string sql = "select * from JobGiver;")
+        private void PopulateGridView(string sql = "select * from JobGiver2;")
         {
             var ds = this.Da.ExecuteQuery(sql);
             this.dgvVendor.AutoGenerateColumns = false;
@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
                     return;
                 }
 
-                var sql = "insert into JobGiver (JobGiver_id, CompanyName, Corporate, Freelancer, Startup) " +
+                var sql = "insert into JobGiver2 (JobGiver_id, CompanyName, Corporate, Freelancer, Startup) " +
                           "values (" + this.txtVendorID.Text + ", '" + this.txtCompanyName.Text + "', '" + this.txtCorpo.Text +
                           "', '" + this.txtFreelancer.Text + "', '" + this.txtStartup.Text + "');";
 
@@ -91,7 +91,7 @@ namespace WindowsFormsApp1
                 if (res == DialogResult.No)
                     return;
 
-                var sql = "delete from JobGiver where JobGiver_id = " + jobGiverId + ";";
+                var sql = "delete from JobGiver2 where JobGiver_id = " + jobGiverId + ";";
                 var count = this.Da.ExecuteDMLQuery(sql);
 
                 if (count == 1)
@@ -112,6 +112,11 @@ namespace WindowsFormsApp1
         {
             Login loginForm = new Login();
             loginForm.Show();
+        }
+
+        private void vendor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

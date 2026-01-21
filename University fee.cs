@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class University_fee : Form
     {
+
         public University_fee()
         {
             InitializeComponent();

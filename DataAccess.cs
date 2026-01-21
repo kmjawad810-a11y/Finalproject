@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
 
         public DataAccess()
         {
-            this.Sqlcon = new SqlConnection(@"Data Source=DESKTOP-1CNFALO\SQLEXPRESS;Initial Catalog=project;Persist Security Info=True;User ID=sa;Password=sql123");
+            this.Sqlcon = new SqlConnection(@"Data Source=JAWAD\SQLEXPRESS;Initial Catalog=project;Integrated Security=True;Encrypt=False");
             Sqlcon.Open();
         }
 

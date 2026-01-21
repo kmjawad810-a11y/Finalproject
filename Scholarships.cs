@@ -38,5 +38,10 @@ namespace WindowsFormsApp1
             Student_Page sp = new Student_Page();
             sp.Show();
         }
+
+        private void Scholarships_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

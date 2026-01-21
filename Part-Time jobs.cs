@@ -12,9 +12,19 @@ namespace WindowsFormsApp1
 {
     public partial class Part_Time_jobs : Form
     {
+        private DataAccess Da { get; set; }
         public Part_Time_jobs()
         {
             InitializeComponent();
+            this.Da = new DataAccess();
+            this.PopulateGridView();
+        }
+
+        private void PopulateGridView(string sql = "select CompanyName, Corporate, Freelancer, startup from JobGiver2;")
+        {
+            var ds = this.Da.ExecuteQuery(sql);
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.DataSource = ds.Tables[0];
         }
 
 

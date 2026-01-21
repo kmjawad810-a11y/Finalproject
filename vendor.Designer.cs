@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vendor));
             this.dgvVendor = new System.Windows.Forms.DataGridView();
+            this.JobGiver_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompanyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Corporate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Freelancer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startup = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,11 +54,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.JobGiver_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompanyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Corporate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Freelancer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startup = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendor)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,6 +76,46 @@
             this.dgvVendor.ReadOnly = true;
             this.dgvVendor.Size = new System.Drawing.Size(644, 418);
             this.dgvVendor.TabIndex = 1;
+            // 
+            // JobGiver_id
+            // 
+            this.JobGiver_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.JobGiver_id.DataPropertyName = "JobGiver_id";
+            this.JobGiver_id.HeaderText = "JobGiver ID";
+            this.JobGiver_id.Name = "JobGiver_id";
+            this.JobGiver_id.ReadOnly = true;
+            // 
+            // CompanyName
+            // 
+            this.CompanyName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CompanyName.DataPropertyName = "CompanyName";
+            this.CompanyName.HeaderText = "CompanyName";
+            this.CompanyName.Name = "CompanyName";
+            this.CompanyName.ReadOnly = true;
+            // 
+            // Corporate
+            // 
+            this.Corporate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Corporate.DataPropertyName = "Corporate";
+            this.Corporate.HeaderText = "Corporate";
+            this.Corporate.Name = "Corporate";
+            this.Corporate.ReadOnly = true;
+            // 
+            // Freelancer
+            // 
+            this.Freelancer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Freelancer.DataPropertyName = "Freelancer";
+            this.Freelancer.HeaderText = "Freelancer";
+            this.Freelancer.Name = "Freelancer";
+            this.Freelancer.ReadOnly = true;
+            // 
+            // startup
+            // 
+            this.startup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.startup.DataPropertyName = "Startup";
+            this.startup.HeaderText = "startup";
+            this.startup.Name = "startup";
+            this.startup.ReadOnly = true;
             // 
             // btnLogout
             // 
@@ -281,46 +321,6 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // JobGiver_id
-            // 
-            this.JobGiver_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.JobGiver_id.DataPropertyName = "JobGiver_id";
-            this.JobGiver_id.HeaderText = "JobGiver ID";
-            this.JobGiver_id.Name = "JobGiver_id";
-            this.JobGiver_id.ReadOnly = true;
-            // 
-            // CompanyName
-            // 
-            this.CompanyName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CompanyName.DataPropertyName = "CompanyName";
-            this.CompanyName.HeaderText = "CompanyName";
-            this.CompanyName.Name = "CompanyName";
-            this.CompanyName.ReadOnly = true;
-            // 
-            // Corporate
-            // 
-            this.Corporate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Corporate.DataPropertyName = "Corporate";
-            this.Corporate.HeaderText = "Corporate";
-            this.Corporate.Name = "Corporate";
-            this.Corporate.ReadOnly = true;
-            // 
-            // Freelancer
-            // 
-            this.Freelancer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Freelancer.DataPropertyName = "Freelancer";
-            this.Freelancer.HeaderText = "Freelancer";
-            this.Freelancer.Name = "Freelancer";
-            this.Freelancer.ReadOnly = true;
-            // 
-            // startup
-            // 
-            this.startup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.startup.DataPropertyName = "Startup";
-            this.startup.HeaderText = "startup";
-            this.startup.Name = "startup";
-            this.startup.ReadOnly = true;
-            // 
             // vendor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,6 +335,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "vendor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.vendor_FormClosing);
+            this.Load += new System.EventHandler(this.vendor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendor)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
